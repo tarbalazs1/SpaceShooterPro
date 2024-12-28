@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         //if R key was pressed restart game
+        if (Input.GetKeyDown(KeyCode.R) && _isGameOver)
+        {
+            SceneManager.LoadScene(0); //current game scene
+        }
     }
 
     public void GameOver() { 

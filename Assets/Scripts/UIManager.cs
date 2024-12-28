@@ -16,11 +16,13 @@ public class UIManager : MonoBehaviour
     private Text _gameOverText;
     [SerializeField]
     private Text _restartText;
+    private GameManager _gameManager;
     // Start is called before the first frame update
     void Start()
     {
         _scoreText.text = "Score: " + 0;
         _gameOverText.gameObject.SetActive(false);
+        _gameManager = GameObject.Find("Game_Manager").GetComponent<GameManager>();
         //_LivesImg.sprite = _LiveSprites[3];
     }
 
@@ -36,6 +38,7 @@ public class UIManager : MonoBehaviour
 
         _restartText.gameObject.SetActive(true);
         StartCoroutine(GameOverFlickerText());
+        _gameManager.GameOver();
     }
 
     private IEnumerator GameOverFlickerText()
