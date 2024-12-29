@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 320605534}
   - component: {fileID: 320605533}
   m_Layer: 0
-  m_Name: Spawn Manager
+  m_Name: Spawn_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,11 +228,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 684172267075380535, guid: da38aa07359a1d34eb3c8c1b7096f598, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 684172267075380535, guid: da38aa07359a1d34eb3c8c1b7096f598, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.78
+      value: 6.87
       objectReference: {fileID: 0}
     - target: {fileID: 684172267075380535, guid: da38aa07359a1d34eb3c8c1b7096f598, type: 3}
       propertyPath: m_LocalPosition.z
